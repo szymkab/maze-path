@@ -1,0 +1,48 @@
+.wsti__maze {
+  display: inline-block;
+  position: relative;
+  background-color: #ad1d2a;
+}
+
+.wsti__maze-row {
+  display: flex;
+}
+
+.wsti__maze-cell {
+  width: 1em;
+  height: 1em;
+}
+
+.wsti__maze-cell--wall {
+  background-color: #222;
+}
+
+.wsti__point {
+  background-color: #aeff00;
+  width: 0.75em;
+  height: 0.75em;
+  transform: rotate(360deg);
+  position: absolute;
+}
+
+.wsti__point:after {
+  position: absolute;
+  width: 0.5em;
+  height: 0.25em;
+  background: #fff;
+  bottom: 100%;
+  left: 0.125em;
+  content: "";
+}
+
+.wsti__controls {
+  margin-top: 1em;
+}
+
+.wsti__controls > *:not(:last-child) {
+  margin-bottom: 0.5em;
+}
+
+.wsti__controls-group {
+  display: flex;
+}
